@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloContacto.css">
+
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/65830ecbb2.js"></script>
+
+</head>
+
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="index.html" id="enlace-equipo" class="btn-header">Productos</a>
+                    <a href="index.html" id="enlace-servicio" class="btn-header">Servicios</a>
+                    <a href="index.html" id="enlace-trabajo" class="btn-header">Trabajos</a>
+                    <a href="contacto.html" id="enlace-contacto" class="btn-header">Contacto</a>
+                </div>
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>CLO</h1>
+            <h2>Sublimaciones y Serigrafía</h2>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="container">
+
+                <form name="myForm" action="envioForm.php" method="POST">
+                    <div class="row">
+                        <div>
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Nombre.." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="lname">Apellido</label>
+                        </div>
+                        <div>
+                            <input type="text" id="lname" name="lname" placeholder="Apellido.." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="number">Teléfono</label>
+                        </div>
+                        <div>
+                            <input type="number" id="number" name="number" placeholder="Número de teléfono.." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div>
+                            <input type="text" id="email" name="email" placeholder="@..." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="mensaje">Dejanos tu mensaje:</label>
+                        </div>
+                        <div>
+                            <textarea id="mensaje" name="mensaje" placeholder="Deja acá tu comentario.."
+                                style="height:200px"></textarea>
+                        </div>
+                        <div class="row">
+                            <input type="submit" name="enviar" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="img/logo.png" alt="logofooter">
+            </div>
+            <div class="iconos">
+                <a href="https://es-la.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/explore" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <p>&#169 Copyright 2020 por ArrowDesign</p>
+    </footer>
+
+    <script src="/envioForm.php"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+
+</html>
